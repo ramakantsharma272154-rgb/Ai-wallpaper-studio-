@@ -1,0 +1,18 @@
+ai-wallpaper-studio
+│
+├── App.js
+├── package.json
+├── supabase.js
+│
+├── screens
+│   ├── HomeScreen.js
+│   ├── CategoryScreen.js
+│   ├── WallpaperScreen.js
+│   ├── LoginScreen.js
+│   └── SignupScreen.js
+│
+├── components
+│   ├── WallpaperCard.js
+│   ├── CategoryRow.js
+│
+└── assets
