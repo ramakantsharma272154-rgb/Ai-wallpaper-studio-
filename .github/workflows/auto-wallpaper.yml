@@ -1,0 +1,19 @@
+name: Auto Wallpapers
+
+on:
+ schedule:
+  - cron: "0 0 * * *"
+
+jobs:
+ build:
+  runs-on: ubuntu-latest
+
+  steps:
+   - uses: actions/checkout@v3
+
+   - name: Install Node
+     uses: actions/setup-node@v3
+
+   - run: npm install
+
+   - run: node generate-wallpapers.js
