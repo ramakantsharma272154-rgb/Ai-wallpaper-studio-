@@ -1,0 +1,8 @@
+ai-wallpaper-auto-bot
+│
+├── generate-wallpapers.js
+├── prompts.json
+├── package.json
+└── .github
+    └── workflows
+        └── auto-wallpaper.yml
