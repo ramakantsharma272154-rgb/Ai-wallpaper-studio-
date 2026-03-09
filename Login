@@ -1,0 +1,11 @@
+const signIn = async () => {
+
+const { error } =
+await supabase.auth.signInWithPassword({
+
+email,
+password
+
+})
+
+}
