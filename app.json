@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "AI Wallpaper Studio",
-    "slug": "ai-wallpaper-studio-",
+    "slug": "ai-wallpaper-studio",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/logo.png",
@@ -13,12 +13,8 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
-    "ios": {
-      "supportsTablet": true
-    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": { "supportsTablet": true },
     "android": {
       "package": "com.aiwallpaperstudio",
       "adaptiveIcon": {
@@ -26,8 +22,13 @@
         "backgroundColor": "#ffffff"
       }
     },
-    "web": {
-      "favicon": "./assets/logo.png"
+    "web": { "favicon": "./assets/logo.png" },
+    "sdkVersion": "50.0.0",
+    "platforms": ["ios", "android"],
+    "extra": {
+      "eas": {
+        "projectId": "6db22909-e469-4bc1-a240-866bc48396d3"
+      }
     }
   }
 }
