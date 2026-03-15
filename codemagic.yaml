@@ -1,23 +1,27 @@
 workflows:
-  expo-android-build:
+  expo-build:
     name: Expo Android Build
     max_build_duration: 60
 
     environment:
-      node: latest
+      node: 18
 
     scripts:
       - name: Install dependencies
         script: |
           npm install
+          npm install react-native
 
       - name: Install Expo CLI
         script: |
           npm install -g expo-cli
 
+      - name: Prebuild project
+        script: |
+          npx expo prebuild --platform android
+
       - name: Build APK
         script: |
-          npx expo prebuild
           cd android
           ./gradlew assembleRelease
 
