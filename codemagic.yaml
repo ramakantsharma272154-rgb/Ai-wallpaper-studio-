@@ -7,16 +7,26 @@ workflows:
       node: 18
 
     scripts:
-  - name: Install dependencies
-    script: |
-      npm install
-      npx expo install
+      - name: Install dependencies
+        script: |
+          npm install
 
-  - name: Expo prebuild
-    script: |
-      npx expo prebuild --platform android
+      - name: Install Expo
+        script: |
+          npm install -g expo
 
-  - name: Build APK
-    script: |
-      cd android
-      ./gradlew assembleRelease
+      - name: Generate Android folder
+        script: |
+          npx expo prebuild --platform android --no-install
+
+      - name: Install node modules again
+        script: |
+          npm install
+
+      - name: Build APK
+        script: |
+          cd android
+          ./gradlew assembleRelease
+
+    artifacts:
+      - android/app/build/outputs/**/*.apk
