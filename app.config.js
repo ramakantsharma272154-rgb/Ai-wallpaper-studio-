@@ -1,0 +1,5 @@
+"expo": {
+  "splash": {
+    "backgroundColor": "#ffffff"
+  }
+}
