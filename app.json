@@ -4,31 +4,11 @@
     "slug": "ai-wallpaper-studio-",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/logo.png",
-    "splash": {
-      "image": "./assets/logo.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
-    "updates": {
-      "fallbackToCacheTimeout": 0
-    },
-    "assetBundlePatterns": ["**/*"],
-    "ios": { "supportsTablet": true },
     "android": {
-      "package": "com.aiwallpaperstudio",
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/logo.png",
-        "backgroundColor": "#ffffff"
-      }
+      "package": "com.aiwallpaper.studio"
     },
-    "web": { "favicon": "./assets/logo.png" },
-    "sdkVersion": "50.0.0",
-    "platforms": ["ios", "android"],
-    "extra": {
-      "eas": {
-        "projectId": "e13d88b2-8a2d-4c21-b95b-b1c33a3fd8c2"
-      }
+    "ios": {
+      "bundleIdentifier": "com.aiwallpaper.studio"
     }
   }
 }
