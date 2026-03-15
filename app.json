@@ -4,11 +4,23 @@
     "slug": "ai-wallpaper-studio-",
     "version": "1.0.0",
     "orientation": "portrait",
+    "scheme": "aiwallpaperstudio",
+    "platforms": ["android","ios"],
+
     "android": {
-      "package": "com.aiwallpaper.studio"
+      "package": "com.aiwallpaper.studio",
+      "versionCode": 1
     },
+
     "ios": {
-      "bundleIdentifier": "com.aiwallpaper.studio"
+      "bundleIdentifier": "com.aiwallpaper.studio",
+      "buildNumber": "1.0.0"
+    },
+
+    "extra": {
+      "eas": {
+        "projectId": "ai-wallpaper-studio"
+      }
     }
   }
 }
