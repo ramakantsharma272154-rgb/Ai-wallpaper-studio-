@@ -7,23 +7,16 @@ workflows:
       node: 18
 
     scripts:
-      - name: Install dependencies
-        script: |
-          npm install
-          npm install react-native
+  - name: Install dependencies
+    script: |
+      npm install
+      npx expo install
 
-      - name: Install Expo CLI
-        script: |
-          npm install -g expo-cli
+  - name: Expo prebuild
+    script: |
+      npx expo prebuild --platform android
 
-      - name: Prebuild project
-        script: |
-          npx expo prebuild --platform android
-
-      - name: Build APK
-        script: |
-          cd android
-          ./gradlew assembleRelease
-
-    artifacts:
-      - android/app/build/outputs/**/*.apk
+  - name: Build APK
+    script: |
+      cd android
+      ./gradlew assembleRelease
