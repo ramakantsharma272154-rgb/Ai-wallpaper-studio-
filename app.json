@@ -7,6 +7,10 @@
     "scheme": "aiwallpaperstudio",
     "platforms": ["android","ios"],
 
+    "splash": {
+      "backgroundColor": "#ffffff"
+    },
+
     "android": {
       "package": "com.aiwallpaper.studio",
       "versionCode": 1
